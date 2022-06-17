@@ -17,7 +17,8 @@
     "changelog": "auto-changelog --starting-version 4.3.1 --commit-limit false --hide-credit",
     "eject": "react-scripts eject",
     "lint": "eslint \"src/**/*.js\"",
-    "start": "react-scripts start",
+    "dev": "react-scripts start",
+    "start": "serve -s build",
     "test": "react-scripts test",
     "heroku-postbuild": "npm run build",
     "test:cov": "npm test -- --coverage --watchAll=false",
@@ -44,6 +45,7 @@
     "react-redux": "^8.0.2",
     "react-router-dom": "^6.3.0",
     "redux": "4.2.0",
+    "serve": "^13.0.2",
     "simplebar-react": "^2.3.7"
   },
   "devDependencies": {
