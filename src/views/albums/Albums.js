@@ -15,7 +15,7 @@ import {
 import { cilMusicNote, cilArrowTop, cilArrowBottom, cilFeaturedPlaylist } from '@coreui/icons'
 import CIcon from '@coreui/icons-react'
 
-const Songs = () => {
+const Albums = () => {
   const hotsongs = [
     {
       song: 'Save your years',
@@ -341,4 +341,4 @@ const Songs = () => {
   )
 }
 
-export default Songs
+export default Albums
