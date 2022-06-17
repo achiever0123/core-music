@@ -399,8 +399,8 @@ const Dashboard = () => {
 
               <br />
 
-              <CTable align="middle" className="mb-0 border" hover responsive>
-                <CTableHead color="light">
+              <CTable align="middle" className="mb-0" hover responsive>
+                <CTableHead>
                   <CTableRow>
                     <CTableHeaderCell className="text-center">
                       <CIcon icon={cilPeople} />
