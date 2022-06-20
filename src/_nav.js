@@ -33,18 +33,18 @@ const _nav = [
   {
     component: CNavGroup,
     name: 'Users',
-    to: '/base',
+    to: '/users',
     icon: <CIcon icon={cilUser} customClassName="nav-icon" />,
     items: [
       {
         component: CNavItem,
         name: 'Artists',
-        to: '/users/artists',
+        to: '/artists',
       },
       {
         component: CNavItem,
         name: 'Listeners',
-        to: '/users/listeners',
+        to: '/listeners',
       },
     ],
   },
@@ -63,7 +63,7 @@ const _nav = [
       {
         component: CNavItem,
         name: 'Starred',
-        to: '/support/starred',
+        to: '/starred',
         icon: <CIcon icon={cilStar} customClassName="nav-icon" />,
       },
     ],

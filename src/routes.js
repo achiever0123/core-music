@@ -15,9 +15,9 @@ const routes = [
   { path: '/albums', name: 'Albums', element: Albums },
   { path: '/notifications', name: 'Notifications', element: Notifications },
   { path: '/support', name: 'Support', element: Support },
-  { path: '/support/starred', name: 'Support', element: Support },
-  { path: '/users/artists', name: 'Artists', element: Artists },
-  { path: '/users/listeners', name: 'Listeners', element: listeners },
+  { path: '/starred', name: 'Support', element: Support },
+  { path: '/artists', name: 'Artists', element: Artists },
+  { path: '/listeners', name: 'Listeners', element: listeners },
 ]
 
 export default routes
