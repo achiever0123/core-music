@@ -1,4 +1,4 @@
-import React from 'react'
+import { React, useState } from 'react'
 import {
   CCard,
   CCardBody,
@@ -8,12 +8,19 @@ import {
   CCardSubtitle,
   CCardText,
   CButton,
+  CModal,
+  CModalBody,
+  CModalFooter,
+  CModalHeader,
+  CModalTitle,
+  CFormTextarea,
 } from '@coreui/react'
 
 import { cilFilter, cilList, cilOptions } from '@coreui/icons'
 import CIcon from '@coreui/icons-react'
 
 const Notifications = () => {
+  const [visible, setVisible] = useState(false)
   return (
     <>
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
@@ -22,6 +29,7 @@ const Notifications = () => {
             color="warning"
             variant="outline"
             style={{ paddingLeft: '1.5rem', paddingRight: '1.5rem' }}
+            onClick={() => setVisible(!visible)}
           >
             Send Message
           </CButton>
@@ -446,6 +454,17 @@ const Notifications = () => {
           </CCard>
         </CCol>
       </CRow>
+      <CModal visible={visible} onClose={() => setVisible(false)}>
+        <CModalHeader onClose={() => setVisible(false)}>
+          <CModalTitle>New Message</CModalTitle>
+        </CModalHeader>
+        <CModalBody>
+          <CFormTextarea id="exampleFormControlTextarea1" rows="3"></CFormTextarea>
+        </CModalBody>
+        <CModalFooter>
+          <CButton className="send-message-modal-button">Send Message</CButton>
+        </CModalFooter>
+      </CModal>
     </>
   )
 }
