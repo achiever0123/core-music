@@ -7,6 +7,7 @@ const Notifications = React.lazy(() => import('./views/notifications/Notificatio
 const Support = React.lazy(() => import('./views/support/Starred'))
 const Artists = React.lazy(() => import('./views/users/artists.js'))
 const listeners = React.lazy(() => import('./views/users/listeners'))
+const login = React.lazy(() => import('./views/pages/login/Login'))
 
 const routes = [
   { path: '/', exact: true, name: 'Home', element: Dashboard },
@@ -18,6 +19,7 @@ const routes = [
   { path: '/starred', name: 'Support', element: Support },
   { path: '/artists', name: 'Artists', element: Artists },
   { path: '/listeners', name: 'Listeners', element: listeners },
+  { path: '/login', name: 'Login', element: login },
 ]
 
 export default routes

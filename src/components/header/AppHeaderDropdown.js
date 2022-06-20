@@ -24,7 +24,7 @@ const AppHeaderDropdown = () => {
           <CIcon icon={cilAccountLogout} className="me-2" />
           Lock Screen
         </CDropdownItem>
-        <CDropdownItem href="#">
+        <CDropdownItem href="/login">
           <CIcon icon={cilLockLocked} className="me-2" />
           Log Out
         </CDropdownItem>

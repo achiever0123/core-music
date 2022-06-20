@@ -1,19 +1,17 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 
-import { CSidebar, CSidebarBrand, CSidebarNav, CSidebarToggler } from '@coreui/react'
+import { CSidebar, CSidebarBrand, CSidebarNav, CAvatar, CNavItem, CNavLink } from '@coreui/react'
+
 import CIcon from '@coreui/icons-react'
 
 import { AppSidebarNav } from './AppSidebarNav'
-import { cilAudioSpectrum } from '@coreui/icons'
-import { logoNegative } from 'src/assets/brand/logo-negative'
-import { sygnet } from 'src/assets/brand/sygnet'
 
 import SimpleBar from 'simplebar-react'
 import 'simplebar/dist/simplebar.min.css'
-
-// sidebar nav config
+import logo from 'src/assets/images/logo.png'
 import navigation from '../_nav'
+import { cilAccountLogout } from '@coreui/icons'
 
 const AppSidebar = () => {
   const dispatch = useDispatch()
@@ -31,7 +29,7 @@ const AppSidebar = () => {
     >
       <CSidebarBrand className="d-none d-md-flex" to="/">
         <div className="napollo-logo">
-          <CIcon icon={cilAudioSpectrum} size="xl" />
+          <CAvatar src={logo} size="lg" />
         </div>
         <h3>Napollo</h3>
       </CSidebarBrand>
@@ -39,11 +37,15 @@ const AppSidebar = () => {
         <SimpleBar>
           <AppSidebarNav items={navigation} />
         </SimpleBar>
+        <div className="sidebar-footer">
+          <CNavItem>
+            <CNavLink href="#">
+              <CIcon icon={cilAccountLogout} size="lg" />
+              Log out
+            </CNavLink>
+          </CNavItem>
+        </div>
       </CSidebarNav>
-      <CSidebarToggler
-        className="d-none d-lg-flex"
-        onClick={() => dispatch({ type: 'set', sidebarUnfoldable: !unfoldable })}
-      />
     </CSidebar>
   )
 }

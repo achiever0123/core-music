@@ -15,67 +15,47 @@ import {
 } from '@coreui/react'
 import CIcon from '@coreui/icons-react'
 import { cilLockLocked, cilUser } from '@coreui/icons'
+import logo from 'src/assets/images/logo.png'
 
 const Login = () => {
   return (
-    <div className="bg-light min-vh-100 d-flex flex-row align-items-center">
+    <div className="min-vh-100 d-flex flex-row align-items-center">
       <CContainer>
         <CRow className="justify-content-center">
-          <CCol md={8}>
-            <CCardGroup>
-              <CCard className="p-4">
-                <CCardBody>
-                  <CForm>
-                    <h1>Login</h1>
-                    <p className="text-medium-emphasis">Sign In to your account</p>
-                    <CInputGroup className="mb-3">
-                      <CInputGroupText>
-                        <CIcon icon={cilUser} />
-                      </CInputGroupText>
-                      <CFormInput placeholder="Username" autoComplete="username" />
-                    </CInputGroup>
-                    <CInputGroup className="mb-4">
-                      <CInputGroupText>
-                        <CIcon icon={cilLockLocked} />
-                      </CInputGroupText>
-                      <CFormInput
-                        type="password"
-                        placeholder="Password"
-                        autoComplete="current-password"
-                      />
-                    </CInputGroup>
-                    <CRow>
-                      <CCol xs={6}>
-                        <CButton color="primary" className="px-4">
-                          Login
-                        </CButton>
-                      </CCol>
-                      <CCol xs={6} className="text-right">
-                        <CButton color="link" className="px-0">
-                          Forgot password?
-                        </CButton>
-                      </CCol>
-                    </CRow>
-                  </CForm>
-                </CCardBody>
-              </CCard>
-              <CCard className="text-white bg-primary py-5" style={{ width: '44%' }}>
-                <CCardBody className="text-center">
-                  <div>
-                    <h2>Sign up</h2>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                      tempor incididunt ut labore et dolore magna aliqua.
-                    </p>
-                    <Link to="/register">
-                      <CButton color="primary" className="mt-3" active tabIndex={-1}>
-                        Register Now!
-                      </CButton>
-                    </Link>
-                  </div>
-                </CCardBody>
-              </CCard>
-            </CCardGroup>
+          <CCol xs={12} md={6} sm={6} className="text-center">
+            <img src={logo} alt="logo" className="logo-image"></img>
+          </CCol>
+          <CCol xs={12} md={6} sm={6} className="mt-4">
+            <CForm>
+              <div className="d-flex mb-4">
+                <h1>Login to&nbsp;</h1>
+                <h1 className="logo-napollo">Napollo</h1>
+              </div>
+              <CInputGroup className="mb-3 pt-4">
+                <CInputGroupText>
+                  <CIcon icon={cilUser} />
+                </CInputGroupText>
+                <CFormInput placeholder="Username" autoComplete="username" />
+              </CInputGroup>
+              <CInputGroup className="mb-4 pt-4">
+                <CInputGroupText>
+                  <CIcon icon={cilLockLocked} />
+                </CInputGroupText>
+                <CFormInput
+                  type="password"
+                  placeholder="Password"
+                  autoComplete="current-password"
+                />
+              </CInputGroup>
+              <CRow>
+                <CCol xs={6}>
+                  <CButton className="px-4 mt-4 login-submit">Login</CButton>
+                </CCol>
+                <CCol xs={6} className="text-right">
+                  <CButton className="px-0 mt-4 login-forgot">Forgot password?</CButton>
+                </CCol>
+              </CRow>
+            </CForm>
           </CCol>
         </CRow>
       </CContainer>

@@ -196,7 +196,7 @@
 }
 
 .albums-image-container{
-    padding: 0rem 3rem 0rem 3rem;
+    // padding: 0rem 3rem 0rem 3rem;
 }
 
 .albums-card .card{
@@ -296,4 +296,51 @@
 
 .sidebar-brand h3{
     margin: 0px;
+}
+
+.sidebar-footer{
+    position: absolute;
+    bottom: 30px;
+    background: #ffffff00;
+}
+
+.sidebar-footer .nav-link{
+    padding: 0px;
+}
+
+.sidebar-footer .nav-link:hover{
+    background-color: #ffffff00;
+}
+
+.sidebar-footer .icon{
+    margin-right: 20px;
+}
+
+.logo-image{
+    border-radius: 50%;
+    width: 65%;
+}
+
+.input-group-text{
+    background-color: #ffffff00;
+}
+
+.logo-napollo{
+    color: #f68128;
+}
+
+.login-submit{
+    background:linear-gradient(90deg, #f68327, #feeb3e);
+    border: none;
+}
+
+.login-forgot{
+    color: #feeb3e;
+    background-color: #ffffff00;
+    border: none;
+}
+.login-forgot:hover{
+    color: #f68327;
+    background-color: #ffffff00;
+    border: none;
 }

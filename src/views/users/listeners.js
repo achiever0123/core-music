@@ -15,135 +15,17 @@ import {
   CProgressBar,
   CAvatar,
 } from '@coreui/react'
-import {
-  cilMusicNote,
-  cilArrowTop,
-  cilArrowBottom,
-  cilFeaturedPlaylist,
-  cilOptions,
-  cilChartLine,
-} from '@coreui/icons'
+import { cilMusicNote, cilOptions } from '@coreui/icons'
 import CIcon from '@coreui/icons-react'
-import { CChartLine } from '@coreui/react-chartjs'
 
-import avatar1 from 'src/assets/images/demi.png'
-import avatar2 from 'src/assets/images/avatars/2.jpg'
+import paypal from 'src/assets/images/payment/paypal.png'
+import gpay from 'src/assets/images/payment/gpay.png'
+import master from 'src/assets/images/payment/master.png'
+import skrill from 'src/assets/images/payment/skrill.png'
+
 import ArtistsDropdown from '../widgets/ArtistsDropdown'
 
 const Listeners = () => {
-  const albumsList = [
-    {
-      status: true,
-      avatar: avatar1,
-      title: 'BE',
-      content: 'BTS',
-      user: {
-        week: '1',
-        peak: '1',
-        weeks: '20',
-      },
-    },
-    {
-      status: true,
-      avatar: avatar1,
-      title: 'BE',
-      content: 'BTS',
-      user: {
-        week: '1',
-        peak: '1',
-        weeks: '20',
-      },
-    },
-    {
-      status: false,
-      avatar: avatar1,
-      title: 'BE',
-      content: 'BTS',
-      user: {
-        week: '1',
-        peak: '1',
-        weeks: '20',
-      },
-    },
-    {
-      status: true,
-      avatar: avatar1,
-      title: 'BE',
-      content: 'BTS',
-      user: {
-        week: '1',
-        peak: '1',
-        weeks: '20',
-      },
-    },
-    {
-      status: false,
-      avatar: avatar1,
-      title: 'BE',
-      content: 'BTS',
-      user: {
-        week: '1',
-        peak: '1',
-        weeks: '20',
-      },
-    },
-    {
-      status: true,
-      avatar: avatar1,
-      title: 'BE',
-      content: 'BTS',
-      user: {
-        week: '1',
-        peak: '1',
-        weeks: '20',
-      },
-    },
-    {
-      status: true,
-      avatar: avatar1,
-      title: 'BE',
-      content: 'BTS',
-      user: {
-        week: '1',
-        peak: '1',
-        weeks: '20',
-      },
-    },
-    {
-      status: false,
-      avatar: avatar1,
-      title: 'BE',
-      content: 'BTS',
-      user: {
-        week: '1',
-        peak: '1',
-        weeks: '20',
-      },
-    },
-    {
-      status: true,
-      avatar: avatar1,
-      title: 'BE',
-      content: 'BTS',
-      user: {
-        week: '1',
-        peak: '1',
-        weeks: '20',
-      },
-    },
-    {
-      status: true,
-      avatar: avatar1,
-      title: 'BE',
-      content: 'BTS',
-      user: {
-        week: '1',
-        peak: '1',
-        weeks: '20',
-      },
-    },
-  ]
-
   const locationsList = [
     {
       location: 'New York',
@@ -208,95 +90,42 @@ const Listeners = () => {
 
   const DonationsLog = [
     {
-      avatar: avatar1,
+      avatar: paypal,
       title: 'Tomisin Olatunji donated N2m to Traylor Swift',
       gateway: '[via Paypal]',
       date: '14 April, 2021',
     },
     {
-      avatar: avatar1,
+      avatar: master,
       title: 'Tomisin Olatunji donated N2m to Traylor Swift',
       gateway: '[via Paypal]',
       date: '14 April, 2021',
     },
     {
-      avatar: avatar1,
+      avatar: skrill,
       title: 'Tomisin Olatunji donated N2m to Traylor Swift',
       gateway: '[via Paypal]',
       date: '14 April, 2021',
     },
     {
-      avatar: avatar1,
+      avatar: gpay,
       title: 'Tomisin Olatunji donated N2m to Traylor Swift',
       gateway: '[via Paypal]',
       date: '14 April, 2021',
     },
     {
-      avatar: avatar1,
+      avatar: master,
       title: 'Tomisin Olatunji donated N2m to Traylor Swift',
       gateway: '[via Paypal]',
       date: '14 April, 2021',
     },
     {
-      avatar: avatar1,
+      avatar: skrill,
       title: 'Tomisin Olatunji donated N2m to Traylor Swift',
       gateway: '[via Paypal]',
       date: '14 April, 2021',
     },
   ]
-
-  const FollowedList = [
-    {
-      avatar: avatar1,
-      name: 'Nicki Minaji',
-      gateway: 'HipHop/Rap',
-      followers: '1,987,353',
-      status: 'up',
-    },
-    {
-      avatar: avatar1,
-      name: 'Nicki Minaji',
-      gateway: 'HipHop/Rap',
-      followers: '1,987,353',
-      status: 'down',
-    },
-    {
-      avatar: avatar1,
-      name: 'Nicki Minaji',
-      gateway: 'HipHop/Rap',
-      followers: '1,987,353',
-      status: 'right',
-    },
-    {
-      avatar: avatar1,
-      name: 'Nicki Minaji',
-      gateway: 'HipHop/Rap',
-      followers: '1,987,353',
-      status: 'down',
-    },
-    {
-      avatar: avatar1,
-      name: 'Nicki Minaji',
-      gateway: 'HipHop/Rap',
-      followers: '1,987,353',
-      status: 'up',
-    },
-    {
-      avatar: avatar1,
-      name: 'Nicki Minaji',
-      gateway: 'HipHop/Rap',
-      followers: '1,987,353',
-      status: 'down',
-    },
-    {
-      avatar: avatar1,
-      name: 'Nicki Minaji',
-      gateway: 'HipHop/Rap',
-      followers: '1,987,353',
-      status: 'right',
-    },
-  ]
-
   const donators = [
     {
       name: 'Tomisin Olatunji',
@@ -454,7 +283,7 @@ const Listeners = () => {
               {DonationsLog.map((item, index) => (
                 <CRow key={index} className="mb-2 donations-log">
                   <CCol xs={3} md={3} sm={3} className="avatar-container text-center">
-                    <CAvatar src={avatar1} size="lg" />
+                    <CAvatar src={item.avatar} size="lg" />
                   </CCol>
                   <CCol xs={9} md={9} sm={9}>
                     <p className="log-1">{item.title}</p>

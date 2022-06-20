@@ -1,8 +1,8 @@
-import React from 'react'
+import { React, useState } from 'react'
 
-import { CRow, CCol, CListGroup, CListGroupItem, CAvatar, CFormCheck, CButton } from '@coreui/react'
+import { CRow, CListGroup, CListGroupItem, CAvatar, CFormCheck } from '@coreui/react'
 import CIcon from '@coreui/icons-react'
-import { cilStar, cilFilter, cilChevronLeft, cilChevronRight } from '@coreui/icons'
+import { cilStar, cilFilter } from '@coreui/icons'
 
 import avatar1 from 'src/assets/images/avatars/1.jpg'
 import avatar2 from 'src/assets/images/avatars/2.jpg'
@@ -96,12 +96,24 @@ const tableExample = [
 ]
 
 const Support = () => {
+  const [isSubscribed, setIsSubscribed] = useState(true)
+  const [eachSubscribed, setEachSubscribed] = useState(false)
+  const handleChange = () => {
+    setIsSubscribed((current) => !current)
+    setEachSubscribed(isSubscribed)
+  }
   return (
     <>
       <CRow className="starred">
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <div>
-            <CFormCheck id="flexCheckDefault" label="Select" className="starred-header" />
+            <CFormCheck
+              id="flexCheckDefault"
+              label="Select"
+              className="starred-header"
+              value={isSubscribed}
+              onChange={handleChange}
+            />
           </div>
           <div className="notification-header-right">
             <a href="/notifications">
@@ -113,7 +125,7 @@ const Support = () => {
         {tableExample.map((item, index) => (
           <CListGroup className="mb-2" key={index} layout={'horizontal-md'}>
             <CListGroupItem>
-              <CFormCheck id="flexCheckDefault" />
+              <CFormCheck id="flexCheckDefault" value={eachSubscribed} />
             </CListGroupItem>
             <CListGroupItem>
               <CAvatar size="lg" src={item.avatar.src} />

@@ -5,29 +5,37 @@ import {
   CCardHeader,
   CCol,
   CRow,
-  CTable,
-  CTableBody,
-  CTableDataCell,
-  CTableHead,
-  CTableHeaderCell,
-  CTableRow,
   CProgress,
   CProgressBar,
   CAvatar,
 } from '@coreui/react'
-import {
-  cilMusicNote,
-  cilArrowTop,
-  cilArrowBottom,
-  cilFeaturedPlaylist,
-  cilOptions,
-  cilChartLine,
-} from '@coreui/icons'
+import { cilArrowTop, cilArrowBottom, cilOptions } from '@coreui/icons'
 import CIcon from '@coreui/icons-react'
-import { CChartLine } from '@coreui/react-chartjs'
 
-import avatar1 from 'src/assets/images/demi.png'
-import avatar2 from 'src/assets/images/avatars/2.jpg'
+import avatar1 from 'src/assets/images/artists/1.png'
+import avatar2 from 'src/assets/images/artists/2.png'
+import avatar3 from 'src/assets/images/artists/3.png'
+import avatar4 from 'src/assets/images/artists/4.png'
+import avatar5 from 'src/assets/images/artists/5.png'
+import avatar6 from 'src/assets/images/artists/6.png'
+import avatar7 from 'src/assets/images/artists/7.png'
+import avatar8 from 'src/assets/images/artists/8.png'
+import avatar9 from 'src/assets/images/artists/9.png'
+import avatar10 from 'src/assets/images/artists/10.png'
+
+import paypal from 'src/assets/images/payment/paypal.png'
+import gpay from 'src/assets/images/payment/gpay.png'
+import master from 'src/assets/images/payment/master.png'
+import skrill from 'src/assets/images/payment/skrill.png'
+
+import artist1 from 'src/assets/images/avatars/1.jpg'
+import artist2 from 'src/assets/images/avatars/2.jpg'
+import artist3 from 'src/assets/images/avatars/3.jpg'
+import artist4 from 'src/assets/images/avatars/4.jpg'
+import artist5 from 'src/assets/images/avatars/5.jpg'
+import artist6 from 'src/assets/images/avatars/6.jpg'
+import artist7 from 'src/assets/images/avatars/7.jpg'
+
 import ArtistsDropdown from '../widgets/ArtistsDropdown'
 
 const Artists = () => {
@@ -45,7 +53,7 @@ const Artists = () => {
     },
     {
       status: true,
-      avatar: avatar1,
+      avatar: avatar2,
       title: 'BE',
       content: 'BTS',
       user: {
@@ -56,7 +64,7 @@ const Artists = () => {
     },
     {
       status: false,
-      avatar: avatar1,
+      avatar: avatar3,
       title: 'BE',
       content: 'BTS',
       user: {
@@ -67,7 +75,7 @@ const Artists = () => {
     },
     {
       status: true,
-      avatar: avatar1,
+      avatar: avatar4,
       title: 'BE',
       content: 'BTS',
       user: {
@@ -78,7 +86,7 @@ const Artists = () => {
     },
     {
       status: false,
-      avatar: avatar1,
+      avatar: avatar5,
       title: 'BE',
       content: 'BTS',
       user: {
@@ -89,7 +97,7 @@ const Artists = () => {
     },
     {
       status: true,
-      avatar: avatar1,
+      avatar: avatar6,
       title: 'BE',
       content: 'BTS',
       user: {
@@ -100,7 +108,7 @@ const Artists = () => {
     },
     {
       status: true,
-      avatar: avatar1,
+      avatar: avatar7,
       title: 'BE',
       content: 'BTS',
       user: {
@@ -111,7 +119,7 @@ const Artists = () => {
     },
     {
       status: false,
-      avatar: avatar1,
+      avatar: avatar8,
       title: 'BE',
       content: 'BTS',
       user: {
@@ -122,7 +130,7 @@ const Artists = () => {
     },
     {
       status: true,
-      avatar: avatar1,
+      avatar: avatar9,
       title: 'BE',
       content: 'BTS',
       user: {
@@ -133,7 +141,7 @@ const Artists = () => {
     },
     {
       status: true,
-      avatar: avatar1,
+      avatar: avatar10,
       title: 'BE',
       content: 'BTS',
       user: {
@@ -208,37 +216,37 @@ const Artists = () => {
 
   const DonationsLog = [
     {
-      avatar: avatar1,
+      avatar: paypal,
       title: 'Tomisin Olatunji donated N2m to Traylor Swift',
       gateway: '[via Paypal]',
       date: '14 April, 2021',
     },
     {
-      avatar: avatar1,
+      avatar: master,
       title: 'Tomisin Olatunji donated N2m to Traylor Swift',
       gateway: '[via Paypal]',
       date: '14 April, 2021',
     },
     {
-      avatar: avatar1,
+      avatar: skrill,
       title: 'Tomisin Olatunji donated N2m to Traylor Swift',
       gateway: '[via Paypal]',
       date: '14 April, 2021',
     },
     {
-      avatar: avatar1,
+      avatar: gpay,
       title: 'Tomisin Olatunji donated N2m to Traylor Swift',
       gateway: '[via Paypal]',
       date: '14 April, 2021',
     },
     {
-      avatar: avatar1,
+      avatar: master,
       title: 'Tomisin Olatunji donated N2m to Traylor Swift',
       gateway: '[via Paypal]',
       date: '14 April, 2021',
     },
     {
-      avatar: avatar1,
+      avatar: skrill,
       title: 'Tomisin Olatunji donated N2m to Traylor Swift',
       gateway: '[via Paypal]',
       date: '14 April, 2021',
@@ -247,49 +255,49 @@ const Artists = () => {
 
   const FollowedList = [
     {
-      avatar: avatar1,
+      avatar: artist1,
       name: 'Nicki Minaji',
       gateway: 'HipHop/Rap',
       followers: '1,987,353',
       status: 'up',
     },
     {
-      avatar: avatar1,
+      avatar: artist2,
       name: 'Nicki Minaji',
       gateway: 'HipHop/Rap',
       followers: '1,987,353',
       status: 'down',
     },
     {
-      avatar: avatar1,
+      avatar: artist3,
       name: 'Nicki Minaji',
       gateway: 'HipHop/Rap',
       followers: '1,987,353',
       status: 'right',
     },
     {
-      avatar: avatar1,
+      avatar: artist4,
       name: 'Nicki Minaji',
       gateway: 'HipHop/Rap',
       followers: '1,987,353',
       status: 'down',
     },
     {
-      avatar: avatar1,
+      avatar: artist5,
       name: 'Nicki Minaji',
       gateway: 'HipHop/Rap',
       followers: '1,987,353',
       status: 'up',
     },
     {
-      avatar: avatar1,
+      avatar: artist6,
       name: 'Nicki Minaji',
       gateway: 'HipHop/Rap',
       followers: '1,987,353',
       status: 'down',
     },
     {
-      avatar: avatar1,
+      avatar: artist7,
       name: 'Nicki Minaji',
       gateway: 'HipHop/Rap',
       followers: '1,987,353',
@@ -321,7 +329,7 @@ const Artists = () => {
                     )}
                   </CCol>
                   <CCol xs={2} md={2} sm={2} className="p-0 list-2">
-                    <img src={avatar1} className="albums-image" />
+                    <img alt="artist" src={item.avatar} className="albums-image" />
                   </CCol>
                   <CCol xs={7} md={7} sm={7} className="list-3">
                     <p>{item.title}</p>
@@ -388,7 +396,7 @@ const Artists = () => {
               {DonationsLog.map((item, index) => (
                 <CRow key={index} className="mb-2 donations-log">
                   <CCol xs={3} md={3} sm={3} className="avatar-container text-center">
-                    <CAvatar src={avatar1} size="lg" />
+                    <CAvatar src={item.avatar} size="lg" />
                   </CCol>
                   <CCol xs={9} md={9} sm={9}>
                     <p className="log-1">{item.title}</p>
@@ -407,7 +415,7 @@ const Artists = () => {
               {FollowedList.map((item, index) => (
                 <CRow key={index} className="mb-4 most-followed-artists">
                   <CCol xs={2} md={2} sm={2} className="avatar-container text-center">
-                    <img src={avatar1} className="artists-image" />
+                    <img alt="artist" src={item.avatar} className="artists-image" />
                   </CCol>
                   <CCol xs={4} md={4} sm={4}>
                     <p className="follow-1">{item.name}</p>

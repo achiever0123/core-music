@@ -1,30 +1,19 @@
 import React from 'react'
-import {
-  CCard,
-  CCardBody,
-  CCardHeader,
-  CCol,
-  CRow,
-  CTable,
-  CTableBody,
-  CTableDataCell,
-  CTableHead,
-  CTableHeaderCell,
-  CTableRow,
-} from '@coreui/react'
-import {
-  cilMusicNote,
-  cilArrowTop,
-  cilArrowBottom,
-  cilFeaturedPlaylist,
-  cilOptions,
-  cilChartLine,
-} from '@coreui/icons'
+import { CCard, CCardBody, CCardHeader, CCol, CRow } from '@coreui/react'
+import { cilArrowTop, cilArrowBottom, cilOptions, cilChartLine } from '@coreui/icons'
 import CIcon from '@coreui/icons-react'
 import { CChartLine } from '@coreui/react-chartjs'
 
-import avatar1 from 'src/assets/images/demi.png'
-import avatar2 from 'src/assets/images/avatars/2.jpg'
+import avatar1 from 'src/assets/images/albums/1.png'
+import avatar2 from 'src/assets/images/albums/2.png'
+import avatar3 from 'src/assets/images/albums/3.png'
+import avatar4 from 'src/assets/images/albums/4.png'
+import avatar5 from 'src/assets/images/albums/5.png'
+import avatar6 from 'src/assets/images/albums/6.png'
+import avatar7 from 'src/assets/images/albums/7.png'
+import avatar8 from 'src/assets/images/albums/8.png'
+import avatar9 from 'src/assets/images/albums/9.png'
+import avatar10 from 'src/assets/images/albums/10.png'
 
 const Albums = () => {
   const albumsList = [
@@ -41,7 +30,7 @@ const Albums = () => {
     },
     {
       status: true,
-      avatar: avatar1,
+      avatar: avatar2,
       title: 'BE',
       content: 'BTS',
       user: {
@@ -52,7 +41,7 @@ const Albums = () => {
     },
     {
       status: false,
-      avatar: avatar1,
+      avatar: avatar3,
       title: 'BE',
       content: 'BTS',
       user: {
@@ -63,7 +52,7 @@ const Albums = () => {
     },
     {
       status: true,
-      avatar: avatar1,
+      avatar: avatar4,
       title: 'BE',
       content: 'BTS',
       user: {
@@ -74,7 +63,7 @@ const Albums = () => {
     },
     {
       status: false,
-      avatar: avatar1,
+      avatar: avatar5,
       title: 'BE',
       content: 'BTS',
       user: {
@@ -85,7 +74,7 @@ const Albums = () => {
     },
     {
       status: true,
-      avatar: avatar1,
+      avatar: avatar6,
       title: 'BE',
       content: 'BTS',
       user: {
@@ -96,7 +85,7 @@ const Albums = () => {
     },
     {
       status: true,
-      avatar: avatar1,
+      avatar: avatar7,
       title: 'BE',
       content: 'BTS',
       user: {
@@ -107,7 +96,7 @@ const Albums = () => {
     },
     {
       status: false,
-      avatar: avatar1,
+      avatar: avatar8,
       title: 'BE',
       content: 'BTS',
       user: {
@@ -118,7 +107,7 @@ const Albums = () => {
     },
     {
       status: true,
-      avatar: avatar1,
+      avatar: avatar9,
       title: 'BE',
       content: 'BTS',
       user: {
@@ -129,7 +118,7 @@ const Albums = () => {
     },
     {
       status: true,
-      avatar: avatar1,
+      avatar: avatar10,
       title: 'BE',
       content: 'BTS',
       user: {
@@ -152,8 +141,9 @@ const Albums = () => {
             </CCardHeader>
             <CCardBody>
               <CRow className="top-album-card">
-                <CCol xs={4} md={4} className="albums-image-container">
-                  <img src={avatar1} className="albums-image" />
+                <CCol xs={1} md={1}></CCol>
+                <CCol xs={3} md={3} className="albums-image-container">
+                  <img alt="album" src={avatar8} className="albums-image" />
                 </CCol>
                 <CCol xs={4} md={4}>
                   <p>Streams</p>
@@ -294,7 +284,7 @@ const Albums = () => {
               </div>
               <CRow className="pt-4">
                 <CCol xs={4} md={4} sm={4} className="albums-image-container-1">
-                  <img src={avatar1} className="albums-image" />
+                  <img alt="album" src={avatar4} className="albums-image" />
                 </CCol>
                 <CCol xs={8} md={8} sm={8}>
                   <div className="trending-card-part-1">
@@ -338,7 +328,7 @@ const Albums = () => {
                     )}
                   </CCol>
                   <CCol xs={2} md={2} sm={2} className="p-0 list-2">
-                    <img src={avatar1} className="albums-image" />
+                    <img alt="album" src={item.avatar} className="albums-image" />
                   </CCol>
                   <CCol xs={7} md={7} sm={7} className="list-3">
                     <p>{item.title}</p>
@@ -379,7 +369,7 @@ const Albums = () => {
                     <p>{index + 1}</p>
                   </CCol>
                   <CCol xs={2} md={2} sm={2} className="p-0 list-2">
-                    <img src={avatar1} className="albums-image" />
+                    <img alt="album" src={item.avatar} className="albums-image" />
                   </CCol>
                   <CCol xs={7} md={7} sm={7} className="list-3">
                     <p>{item.title}</p>
