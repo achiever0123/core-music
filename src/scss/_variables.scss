@@ -505,8 +505,8 @@ $link-color:                              #f68128 !default;
 // $h2-font-size:                $font-size-base * 2 !default;
 // $h3-font-size:                $font-size-base * 1.75 !default;
 // $h4-font-size:                $font-size-base * 1.5 !default;
-// $h5-font-size:                $font-size-base * 1.25 !default;
-// $h6-font-size:                $font-size-base !default;
+$h5-font-size:                   1.2rem !default;
+$h6-font-size:                   0.8rem !default;
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
@@ -826,26 +826,26 @@ $input-border-color:                    #636363 !default;
 // scss-docs-end form-input-variables
 
 // scss-docs-start form-check-variables
-// $form-check-input-width:                  1em !default;
+$form-check-input-width:                  1.5em !default;
 // $form-check-min-height:                   $font-size-base * $line-height-base !default;
 // $form-check-padding-start:                $form-check-input-width + .5em !default;
 // $form-check-margin-bottom:                .125rem !default;
-// $form-check-label-color:                  unset !default;
+$form-check-label-color:                  #f9b113 !default;
 // $form-check-label-cursor:                 null !default;
 // $form-check-transition:                   null !default;
 
 // $form-check-input-active-filter:          brightness(90%) !default;
 
-// $form-check-input-bg:                     $input-bg !default;
-// $form-check-input-border:                 1px solid rgba($black, .25) !default;
+$form-check-input-bg:                     #1a223400 !default;
+$form-check-input-border:                 1px solid rgba(255,255,255, 1) !default;
 // $form-check-input-border-radius:          .25em !default;
 // $form-check-radio-border-radius:          50% !default;
 // $form-check-input-focus-border:           $input-focus-border-color !default;
 // $form-check-input-focus-box-shadow:       $input-btn-focus-box-shadow !default;
 
 // $form-check-input-checked-color:          $component-active-color !default;
-// $form-check-input-checked-bg-color:       $component-active-bg !default;
-// $form-check-input-checked-border-color:   $form-check-input-checked-bg-color !default;
+$form-check-input-checked-bg-color:       #1a223400 !default;
+$form-check-input-checked-border-color:   #ffffff !default;
 // $form-check-input-checked-bg-image:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$form-check-input-checked-color}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/></svg>") !default;
 // $form-check-radio-checked-bg-image:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2' fill='#{$form-check-input-checked-color}'/></svg>") !default;
 
@@ -1461,7 +1461,7 @@ $card-bg:                           #101725 !default;
 // List group
 // scss-docs-start list-group-variables
 // $list-group-color:                  unset !default;
-// $list-group-bg:                     $white !default;
+$list-group-bg:                     #1a2234 !default;
 // $list-group-border-color:           rgba($black, .125) !default;
 // $list-group-border-width:           $border-width !default;
 // $list-group-border-radius:          $border-radius !default;

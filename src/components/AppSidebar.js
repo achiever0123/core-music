@@ -5,7 +5,7 @@ import { CSidebar, CSidebarBrand, CSidebarNav, CSidebarToggler } from '@coreui/r
 import CIcon from '@coreui/icons-react'
 
 import { AppSidebarNav } from './AppSidebarNav'
-
+import { cilAudioSpectrum } from '@coreui/icons'
 import { logoNegative } from 'src/assets/brand/logo-negative'
 import { sygnet } from 'src/assets/brand/sygnet'
 
@@ -30,6 +30,9 @@ const AppSidebar = () => {
       }}
     >
       <CSidebarBrand className="d-none d-md-flex" to="/">
+        <div className="napollo-logo">
+          <CIcon icon={cilAudioSpectrum} size="xl" />
+        </div>
         <h3>Napollo</h3>
       </CSidebarBrand>
       <CSidebarNav>

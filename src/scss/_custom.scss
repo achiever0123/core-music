@@ -1,1 +1,299 @@
 // Here you can add other styles
+
+.card .card-title {
+    color: #519bb6;
+}
+
+.card .card-text{
+    font-size: 0.9rem;
+    padding-top: 40px;
+}
+
+.notification-header-right{
+    font-size: 1.2rem;
+    color: #f9b113;
+}
+.notification-header-right a{
+    color: #f9b113;
+    padding: 5px;
+}
+
+.notification-cards .card-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.starred .list-group{
+    justify-content: center;
+}
+
+.starred .list-group-item{
+    display: flex;
+    align-items: center;
+}
+
+.starred .list-title{
+    color: #519bb6;
+}
+
+.starred-header input{
+    border: 1px solid #f9b113;
+}
+
+.starred-header input:checked{
+    border: 1px solid #f9b113;   
+}
+
+.songs-table th{
+    background-color: #1f2e49;
+}
+
+.th-start{
+    border-radius: 25px 0px 0px 25px;
+}
+
+.th-end{
+    border-radius: 0px 25px 25px 0px;
+}
+
+.card-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.songs-card .card-header div{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.songs-card .card-small-part{
+    background-color: #1a2234;
+    border: 1px solid #6a7082;
+    border-radius: 5px;
+    padding: 0.5rem 2.8rem 0.8rem 1.8rem;
+    display: inline-block;
+}
+
+.songs-card .card-text{
+    padding-top: 0px;
+}
+
+.songs-card .card-small-part .small-part-span{
+    color: #aa4e44;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+.songs-card .card-small-part span{
+    color: #8a8ea4;
+}
+
+.songs-card .card{
+    border: none;
+}
+
+.songs-card .card-body{
+    text-align: left !important;
+}
+
+.top-song-card p{
+    font-size: .8rem;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    color: #8a8ea4;
+}
+
+.top-song-card div{
+    font-size: 1.2rem;
+    color: #c2b838;
+    margin-bottom: 20px;
+}
+
+.songs-card .card-small-part-1{
+    background-color: #1a2234;
+    border: 1px solid #6a7082;
+    border-radius: 5px;
+    padding: 0.5rem 1.8rem 0.8rem 1.8rem;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.songs-card .small-part-span-1{
+    color: #aa4e44;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+.songs-card .card-small-part-1 span{
+    color: #8a8ea4;
+}
+
+.trending-card-part-1 .tr-span-1{
+    color: #dc8d09;
+    font-size: 1.8rem;
+}
+
+.trending-card-part-1 .tr-span-3{
+    color: #3ef8d3;
+    margin-left: 0.5rem;
+}
+
+.trending-card-part-1{
+    margin-bottom: 10px;
+}
+
+.songs-card .card{
+    min-height: 330px;
+}
+
+.topgrnre-card-part1{
+    color: #3cf1cd;
+    font-size: 2rem;
+    margin-top: 35px;
+    margin-bottom: 70px;
+}
+
+.topgenre-progress{
+    height: 100%;
+    background-color: #463d47;
+    border-radius: 0.5rem;
+}
+
+.topgenre-progressbar{
+    background-color: #d8747d !important;
+}
+
+.albums-card .card-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.albums-image{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.albums-card .card-small-part-1{
+    background-color: #1a2234;
+    border: 1px solid #6a7082;
+    border-radius: 5px;
+    padding: 0.5rem 1.8rem 0.8rem 1.8rem;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+.albums-card .card-small-part-1 span{
+    color: #8a8ea4;
+}
+
+.albums-card .small-part-span-1{
+    color: #aa4e44;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+.albums-image-container{
+    padding: 0rem 3rem 0rem 3rem;
+}
+
+.albums-card .card{
+    min-height: 330px;
+}
+
+.top-album-card{
+    margin-bottom: 20px;
+}
+
+.albums-image-container-1{
+    padding: 0rem 1.5rem 0rem 1.5rem;
+}
+
+.top-albums-list-item-1{
+    background-color: #1f2e49;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.top-albums-list-item-1 .list-1 p{
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.top-albums-list-item-1 .list-3 p{
+    font-size: 1rem;
+    // font-weight: bold;
+    margin: 0rem;
+}
+
+.top-albums-list-item-1 .list-3 label{
+    color: gray;
+}
+
+.top-albums-list-item-1 .list-3 .list-3-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.toplocation-progress{
+    height: 100%;
+    background-color: #685b46;
+    border-radius: 0.5rem;
+}
+
+.toplocation-progressbar{
+    background-color: #f9af31 !important;
+}
+
+.donations-log p{
+    margin-bottom: 0rem;
+}
+
+.donations-log .log-2{
+    color: #579288;
+}
+
+.donations-log .log-3{
+    color: gray;
+    font-size: .6rem;
+}
+
+.artists-image{
+    width: 100%;
+    border-radius: 10px;
+    border: 3px solid #f78f2b;
+}
+
+.most-followed-artists p{
+    margin-bottom: 0px;
+}
+
+.most-followed-artists .follow-2{
+    font-weight: lighter;
+}
+
+.most-followed-artists .followers{
+    color: #dcca03;
+}
+
+.most-followed-artists{
+    align-items: center;
+}
+
+.napollo-logo{
+    background: linear-gradient(45deg, #ef451b, #fcd238);
+    border-radius: 50%;
+    width: 37px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.sidebar-brand h3{
+    margin: 0px;
+}
