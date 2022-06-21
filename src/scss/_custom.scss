@@ -349,3 +349,28 @@
     background: linear-gradient(90deg, #f68429, #fdce38);
     border: none;
 }
+
+.sidebar-top p, label{
+    color: gray;
+    margin-bottom: 0px;
+}
+
+.sidebar-top .span-follow{
+    color: #fddd39;
+}
+
+.sidebar-top .music-artist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.sidebar-top .music-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

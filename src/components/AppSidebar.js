@@ -1,7 +1,16 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 
-import { CSidebar, CSidebarBrand, CSidebarNav, CAvatar, CNavItem, CNavLink } from '@coreui/react'
+import {
+  CSidebar,
+  CSidebarBrand,
+  CSidebarNav,
+  CAvatar,
+  CNavItem,
+  CNavLink,
+  CRow,
+  CCol,
+} from '@coreui/react'
 
 import CIcon from '@coreui/icons-react'
 
@@ -34,6 +43,29 @@ const AppSidebar = () => {
         <h3>Napollo</h3>
       </CSidebarBrand>
       <CSidebarNav>
+        <div className="d-md-none d-lg-none d-xl-none p-4 mt-4 sidebar-top">
+          <CRow>
+            <CCol sm={5} xs={5} className="music-group">
+              <div className="music-artist">AJ</div>
+            </CCol>
+            <CCol sm={7} xs={7}>
+              <h5>Artist Test1</h5>
+              <label>@rockband</label>
+              <p>Ontario, Canada</p>
+            </CCol>
+          </CRow>
+          <CRow className="pt-4">
+            <CCol xs={6} sm={6}>
+              <span className="span-follow">1&nbsp;&nbsp;</span>
+              <span>Followers</span>
+            </CCol>
+            <CCol xs={6} sm={6}>
+              <span className="span-follow">1&nbsp;&nbsp;</span>
+              <span>Following</span>
+            </CCol>
+          </CRow>
+        </div>
+        <hr className="d-md-none d-lg-none d-xl-none"></hr>
         <SimpleBar>
           <AppSidebarNav items={navigation} />
         </SimpleBar>
