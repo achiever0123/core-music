@@ -71,7 +71,7 @@ const AppSidebar = () => {
         </SimpleBar>
         <div className="sidebar-footer">
           <CNavItem>
-            <CNavLink href="#">
+            <CNavLink href="/login">
               <CIcon icon={cilAccountLogout} size="lg" />
               Log out
             </CNavLink>
