@@ -43,7 +43,7 @@ const AppSidebar = () => {
         <h3>Napollo</h3>
       </CSidebarBrand>
       <CSidebarNav>
-        <div className="d-md-none d-lg-none d-xl-none p-4 mt-4 sidebar-top">
+        {/* <div className="d-md-none d-lg-none d-xl-none p-4 mt-4 sidebar-top">
           <CRow>
             <CCol sm={5} xs={5} className="music-group">
               <div className="music-artist">AJ</div>
@@ -64,8 +64,8 @@ const AppSidebar = () => {
               <span>Following</span>
             </CCol>
           </CRow>
-        </div>
-        <hr className="d-md-none d-lg-none d-xl-none"></hr>
+        </div> */}
+        {/* <hr className="d-md-none d-lg-none d-xl-none"></hr> */}
         <SimpleBar>
           <AppSidebarNav items={navigation} />
         </SimpleBar>

@@ -16,6 +16,7 @@
 .notification-header-right a{
     color: #f9b113;
     padding: 5px;
+    text-decoration: none;
 }
 
 .notification-cards .card-title{
@@ -373,4 +374,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.d-song-title{
+    margin: 0px;
+    font-size: 1.25rem;
+    color: #f9b113;
+}
+
+.d-song-list-img{
+    width: 50%;
+}
+
+.list-group-item{
+    border: none;
+}
+
+.d-song-list-no p{
+    font-size: 1.5rem;
+    margin: 0px;
 }

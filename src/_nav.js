@@ -8,6 +8,7 @@ import {
   cilMusicNote,
   cilHome,
   cilStar,
+  cilAudio,
 } from '@coreui/icons'
 import { CNavGroup, CNavItem } from '@coreui/react'
 
@@ -53,6 +54,12 @@ const _nav = [
     name: 'Notifications',
     to: '/notifications',
     icon: <CIcon icon={cilBell} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavItem,
+    name: 'Discovered Songs',
+    to: '/discovered_songs',
+    icon: <CIcon icon={cilAudio} customClassName="nav-icon" />,
   },
   {
     component: CNavGroup,
