@@ -1,8 +1,6 @@
-import { React, useState } from 'react'
+import { React } from 'react'
 
-import { CRow, CListGroup, CListGroupItem, CAvatar, CButton } from '@coreui/react'
-import CIcon from '@coreui/icons-react'
-import { cilStar, cilFilter } from '@coreui/icons'
+import { CRow, CListGroup, CListGroupItem, CButton } from '@coreui/react'
 
 import avatar1 from 'src/assets/images/artists/1.png'
 import avatar2 from 'src/assets/images/artists/2.png'
@@ -106,7 +104,11 @@ const Discovered_songs = () => {
               <img src={item.avatar.src} alt="d-song" className="d-song-list-img"></img>
             </CListGroupItem>
             <CListGroupItem className="list-title">{item.user.name}</CListGroupItem>
-            <CListGroupItem>{item.user.title}</CListGroupItem>
+            <CListGroupItem>
+              <CButton color="success" variant="outline">
+                Play a song
+              </CButton>
+            </CListGroupItem>
             <CListGroupItem>
               <CButton color="warning" variant="outline">
                 Accept
